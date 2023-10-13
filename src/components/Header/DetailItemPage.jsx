@@ -1,4 +1,4 @@
-const DetailItem = () => {
+const DetailItemPage = () => {
   return (
     <div>
       <h1>DetailItem</h1>
@@ -6,4 +6,4 @@ const DetailItem = () => {
   );
 };
 
-export default DetailItem;
+export default DetailItemPage;

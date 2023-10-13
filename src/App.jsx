@@ -12,6 +12,7 @@ import CarritoPage from "./pages/CarritoPage";
 
 //React router DOM
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DetailItemPage from "./components/Header/DetailItemPage";
 
 const App = () => {
   return (
@@ -29,6 +30,9 @@ const App = () => {
           <Route path="/contacto" element={<ContactoPage />} />
           <Route path="/sobre_nosotros" element={<Sobre_nosotrosPage />} />
           <Route path="/carrito" element={<CarritoPage />} />
+
+          <Route path="/detailitem" element={<DetailItemPage />} />
+
 
         </Routes>
       </div>

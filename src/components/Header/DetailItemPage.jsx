@@ -1,7 +1,7 @@
 const DetailItemPage = () => {
   return (
     <div>
-      <h1>DetailItem</h1>
+      <h1>Descripcion del Producto</h1>
     </div>
   );
 };

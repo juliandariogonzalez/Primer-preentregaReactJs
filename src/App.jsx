@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Header/Footer";
 //Pages
 import HomePage from "./pages/HomePage";
 import BicicletasPage from "./pages/BicicletasPage";
@@ -31,10 +32,14 @@ const App = () => {
           <Route path="/sobre_nosotros" element={<Sobre_nosotrosPage />} />
           <Route path="/carrito" element={<CarritoPage />} />
 
+          {/* ruta para ver detalle de los items */}
           <Route path="/detailitem" element={<DetailItemPage />} />
 
 
         </Routes>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </Router>
   );

@@ -7,6 +7,10 @@ h1{
     text-align: center;
 }
 
-.Container{
-    justify-content: center;
+.Card-List{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    margin-left: 9%;    
 }
+

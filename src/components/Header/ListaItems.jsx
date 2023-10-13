@@ -13,7 +13,7 @@ function ListaItems() {
             <Card.Body style={{ textAlign: 'center' }}>
               <Card.Title>Raleigh Mojave 4.0</Card.Title>
               <Card.Text>Rodado 29 21v Color: Negro y gris.</Card.Text>
-              <Link to="/detailItem"> <Button variant="danger">Ver Producto</Button></Link>
+              <Link to="/DetailItem"> <Button variant="danger">Ver Producto</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -24,7 +24,7 @@ function ListaItems() {
             <Card.Body style={{ textAlign: 'center' }}>
               <Card.Title>Bicicleta Rango Probike</Card.Title>
               <Card.Text>Rodado26 21v Color: Naranja.</Card.Text>
-              <Link to="/detailItem"> <Button variant="danger">Ver Producto</Button></Link>
+              <Link to="/DetailItem"> <Button variant="danger">Ver Producto</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -37,7 +37,7 @@ function ListaItems() {
             <Card.Body style={{ textAlign: 'center' }}>
               <Card.Title>Bicicleta SBK Fatboy</Card.Title>
               <Card.Text>Rodado 26 X8 Color: Negro y rojo.</Card.Text>
-              <Link to="/detailItem"> <Button variant="danger">Ver Producto</Button></Link>
+              <Link to="/DetailItem"> <Button variant="danger">Ver Producto</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -47,7 +47,7 @@ function ListaItems() {
             <Card.Body style={{ textAlign: 'center' }}>
               <Card.Title>Zenith Cima URB</Card.Title>
               <Card.Text>Rodado 28 21v Color: Azul.</Card.Text>
-              <Link to="/detailItem"> <Button variant="danger">Ver Producto</Button></Link>
+              <Link to="/DetailItem"> <Button variant="danger">Ver Producto</Button></Link>
             </Card.Body>
           </Card>
         </Col>

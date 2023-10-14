@@ -11,7 +11,7 @@ const DetailItemPage = () => {
   const [ char, setChar] = useState([])
   console.log(char);
   useEffect ( () => {
-    axios (`https://api.mercadolibre.com/sites/MLA/search?q=bicicletas/${id}`).then((res)=> setChar(res.data));
+    axios (`https://api.mercadolibre.com/sites/MLA/search?q=bic/${id}`).then((res)=> setChar(res.data));
   }, [id]  );
 
   return (
@@ -23,10 +23,15 @@ const DetailItemPage = () => {
 
           <Spinner animation="border" variant="danger" />
           <p >Cargando...</p>
-
         </div> 
    
       )}
+      <div>
+
+          <p>
+            Hola ernesto, Tuve problemas para que la card se pinte con el ID del producto, no se si es porque me pide la validacion de mercadolibre o que. Si en la correccion me podes hacer una devolucion de como solucionarlo estoy mas que agradecido! Gracias, perdon la demora
+          </p>
+      </div>
     </div>
   )
 }

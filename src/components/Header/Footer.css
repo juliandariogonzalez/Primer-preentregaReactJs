@@ -9,7 +9,15 @@
   background-color: rgb(209, 59, 59);
   text-align: center;
   margin-top: 40px;
-  height: 120px;
-  display: grid;
-  justify-content: center;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.logo-instagram{
+  margin-top: 20px;
+}
+.logo-facebook{
+  margin-top: 20px;
 }

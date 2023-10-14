@@ -16,8 +16,16 @@ const DetailItemPage = () => {
 
   return (
     <div>
-      <h1>detail</h1>
-      
+      <h1>Detalle del Producto</h1>
+      {char.id ? (
+        <CardBikes
+          id={char.id}
+          title={char.title}
+          thumbnail={char.thumbnail}
+        />
+      ) : (
+        <p style={{ display: 'flex', justifyContent:"center"}}>Cargando...</p>
+      )}
     </div>
   )
 }

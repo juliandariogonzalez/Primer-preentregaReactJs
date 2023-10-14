@@ -1,11 +1,11 @@
-import {  Row, Col, Card, Button } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import './ListaItems.css';
 import { Link } from 'react-router-dom';
-import "./CardBikes.css"
+import "./CardBikes.css";
 
 
 const CardBikes = ({ char }) => {
-    const{ thumbnail, title } = char;
+    const{ thumbnail, title } = char
 
 
   return (
@@ -16,7 +16,7 @@ const CardBikes = ({ char }) => {
             <Card.Img variant="top" src={ thumbnail}  />
             <Card.Body style={{ textAlign: 'center' }} >
               <Card.Title style={{ maxHeight: '3rem', overflow: 'hidden', textOverflow: 'ellipsis' }} > {title} </Card.Title>
-              <Link to="/detailItem"> <Button variant="danger">Ver Producto</Button></Link>
+              <Link to="/detailitem"> <Button variant="danger">Ver Producto</Button></Link>
             </Card.Body>
           </Card>
        
@@ -24,4 +24,4 @@ const CardBikes = ({ char }) => {
   )
 }
 
-export default CardBikes
+export default CardBikes;

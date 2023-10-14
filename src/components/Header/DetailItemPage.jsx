@@ -1,27 +1,25 @@
+import axios from 'axios';
 import { useState, useEffect } from 'react';
+import CardBikes from './CardBikes';
 
-function DetailItem  (){
-  const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    fetch('https://api.mercadolibre.com/sites/MLA/search?q=bicicletas')
-      .then(response => response.json())
-      .then(data => {
-        setProducts(data.results.slice(0, 10)); 
-      })
-      .catch(error => console.error('Error:', error));
-  }, []);
+
+import {  useParams } from 'react-router-dom';
+
+const DetailItemPage = () => {
+  let {id} =useParams();
+  const [ char, setChar] = useState([])
+  console.log(char);
+  useEffect ( () => {
+    axios (`https://api.mercadolibre.com/sites/MLA/search?q=bicicletas/${id}`).then((res)=> setChar(res.data));
+  }, [id]  );
 
   return (
-    <div className="Detalle">
-      <h1>Lista de Productos de Mercadolibre</h1>
-      <ul>
-        {products.map((product, index) => (
-          <li key={index}>{product.title}</li>
-        ))}
-      </ul>
+    <div>
+      <h1>detail</h1>
+      
     </div>
-  );
+  )
 }
 
-export default DetailItem;
+export default DetailItemPage
